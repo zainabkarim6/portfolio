@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zainab Karim's Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #384e77;
+      color: #fff;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 32px 48px 16px 48px;
+    }
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      margin-left: 32px;
+      font-size: 1.1em;
+      position: relative;
+    }
+    .nav-links a:hover {
+      border-bottom: 2px solid #f2b5d4;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-top: 0;
+      margin-bottom: 0.3em;
+      letter-spacing: 1px;
+      font-weight: bold;
+    }
+    .container {
+      max-width: 700px;
+      margin: 48px auto;
+      background: #435a86;
+      border-radius: 32px;
+      box-shadow: 0 2px 20px #22325520;
+      padding: 40px 44px;
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+    .intro {
+      flex: 1;
+      min-width: 330px;
+    }
+    .intro p {
+      line-height: 1.7em;
+      font-size: 1.13em;
+      margin-bottom: 32px;
+      color: #ffeaea;
+    }
+    .btn-group a {
+      background: #f2b5d4;
+      color: #384e77;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      padding: 12px 28px;
+      margin-right: 16px;
+      border: none;
+      font-size: 1em;
+      box-shadow: 1px 3px 15px #22325520;
+      transition: background 0.2s;
+      display: inline-block;
+    }
+    .btn-group a:hover {
+      background: #fff;
+      color: #384e77;
+    }
+    .graphic-wrapper {
+      position: relative;
+      width: 180px;
+      height: 180px;
+    }
+    .graphic {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 180px;
+      height: 180px;
+      z-index: 1;
+    }
+    .profile-img {
+      position: absolute;
+      top: 30px;
+      left: 30px;
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 60px;
+      box-shadow: 0 2px 8px #22325540;
+      z-index: 2;
+      border: 4px solid #f2b5d4;
+      background: #f9fcff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <span style="font-size: 1.7em; font-weight:700;letter-spacing:.5px;color: #fff;">Zainab Karim's Portfolio</span>
+    
+  </header>
+  <div class="container">
+    <div class="intro">
+      <h1>HELLO!</h1>
+      <p>
+      I’m Zainab Karim, a motivated computer science student with a passion for technology and problem-solving.</p>
+
+      <div class="btn-group">
+        <a href="about me.html">About Me</a>
+        <a href="projects.html">Projects</a>
+      </div>
+    </div>
+    <div class="graphic-wrapper">
+     
+      <svg class="graphic" viewBox="0 0 180 180">
+        <ellipse cx="90" cy="90" rx="80" ry="60" style="fill:#f2b5d4;opacity:.8"/>
+      </svg>
+     
+      <img src="images/waving.png" alt="Waving" class="profile-img" />
+    </div>
+  </div>
+</body>
+</html>
