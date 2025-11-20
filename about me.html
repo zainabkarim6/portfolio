@@ -5,6 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me - Zainab</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
     <style>
         body {
             margin: 0;
@@ -65,63 +67,152 @@
             max-width: 160px;
             height: auto;
         }
+
         .contact-buttons {
-  margin-top: 22px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 18px;
-}
-.contact-btn {
-  display: inline-flex;
-  align-items: center;
-  background: #f2b5d4;
-  color: #384e77 !important;
-  font-weight: 600;
-  border: none;
-  border-radius: 8px;
-  padding: 10px 18px;
-  text-decoration: none;
-  font-size: 1em;
-  transition: background .2s;
-  box-shadow: 1px 3px 10px #22325520;
-}
-.contact-btn i {
-  margin-right: 7px;
-  font-size: 1.2em;
-}
-.contact-btn:hover {
-  background: #fff;
-  color: #384e77 !important;
-}
+            margin-top: 22px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+        }
 
+        .contact-btn {
+            display: inline-flex;
+            align-items: center;
+            background: #f2b5d4;
+            color: #384e77 !important;
+            font-weight: 600;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 18px;
+            text-decoration: none;
+            font-size: 1em;
+            transition: background .2s;
+            box-shadow: 1px 3px 10px #22325520;
+        }
 
+        .contact-btn i {
+            margin-right: 7px;
+            font-size: 1.2em;
+        }
+
+        .contact-btn:hover {
+            background: #fff;
+            color: #384e77 !important;
+        }
+
+        .skill-set-section {
+            background: #121d32;
+            color: #ffffff;
+            border-radius: 20px;
+            margin-top: 38px;
+            padding: 20px 10px;
+            box-shadow: 0 2px 12px #2232551d;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .skill-icons {
+            display: flex;
+            gap: 28px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .skill-icon {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 2.0em;
+            color: #d3d6db;
+            margin-bottom: 8px;
+            filter: drop-shadow(0 1px 4px #22325508);
+        }
+
+        .skill-icon span {
+            margin-top: 10px;
+            font-size: 1 em;
+        }
     </style>
 </head>
 
 <body>
     <header>
-        
-         
-    <span style="font-size: 1.6em; font-weight:700;letter-spacing:.5px;color: #fff;">ZK</span>
-    <nav class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="connect.html">Let's Connect</a>
-    </nav>
-  </header>
-   
+
+
+        <span style="font-size: 1.6em; font-weight:700;letter-spacing:.5px;color: #fff;">ZK</span>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="connect.html">Let's Connect</a>
+        </nav>
+    </header>
+
     <div class="container">
         <div class="about-text">
             <h2>About Me</h2>
             <p>
-               I’m Zainab Karim, a motivated computer science student with a strong interest in technology, problem-solving, and continuous learning. I’m patient, responsible, and enjoy taking on challenges that help me grow both personally and professionally. I have a passion for helping others, exploring innovative tools, and applying my skills to create meaningful solutions. I’m always eager to learn, experiment, and improve through every project I undertake.
+                I’m Zainab Karim, a motivated computer science student with a strong interest in technology,
+                problem-solving, and continuous learning. I’m patient, responsible, and enjoy taking on challenges that
+                help me grow both personally and professionally. I have a passion for helping others, exploring
+                innovative tools, and applying my skills to create meaningful solutions. I’m always eager to learn,
+                experiment, and improve through every project I undertake.
             </p>
-          
+
         </div>
-      
     </div>
 
-   
+    <div class="skill-set-section">
+        <footer>
+            <h1 style="margin-top:0;">Skill Set</h1>
+            <div class="skill-icons">
+
+                <span class="skill-icon">
+                    <i class="fas fa-code"></i>
+                    <span>C++</span>
+                </span>
+
+                <span class="skill-icon">
+                    <i class="fab fa-html5"></i>
+                    <span>HTML</span>
+                </span>
+
+                <span class="skill-icon">
+                    <i class="fab fa-css3-alt"></i>
+                    <span>CSS</span>
+                </span>
+
+                <span class="skill-icon">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Scratch_Logo.svg" alt="Scratch"
+                        style="height:2em;" />
+                    <span>Scratch</span>
+                </span>
+
+                <span class="skill-icon">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Canva_icon_2021.svg" alt="Canva"
+                        style="height:2em;" />
+                    <span>Canva</span>
+                </span>
+
+                <span class="skill-icon">
+                    <i class="fas fa-file-word"></i>
+                    <span>Word</span>
+                </span>
+
+                <span class="skill-icon">
+                    <i class="fas fa-file-powerpoint"></i>
+                    <span>PowerPoint</span>
+                </span>
+        </footer>
+
+    </div>
+
+    </div>
+
+
+    </div>
+
+
 </body>
 
 </html>
