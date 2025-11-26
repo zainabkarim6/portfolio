@@ -2,67 +2,118 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Let's Connect - Zainab Karim</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <style>
     body {
-      background: #000000;
-      color: #fff;
-      font-family: 'Segoe UI', Arial, sans-serif;
       margin: 0;
-      padding: 40px 20px;
-      max-width: 700px;
-      margin-left: auto;
-      margin-right: auto;
-      border-radius: 16px;
-      
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #000;
+      color: #d3d6db;
+      min-height: 100vh;
+    }
+
+    /* Header exactly like index.html */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 32px 48px 16px 48px;
+      background: #000;
+    }
+    header span {
+      font-size: 1.7em;
+      font-weight: 700;
+      letter-spacing: .5px;
+      color: #fff;
+    }
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      margin-left: 32px;
+      font-size: 1.1em;
+      position: relative;
+    }
+    .nav-links a:hover {
+      border-bottom: 2px solid #00d4ff;
+    }
+
+    /* Centered content */
+    .connect-content {
+      text-align: center;
+      padding: 100px 20px;
     }
     h1 {
-      font-weight: 700;
+      font-size: 4em;
       color: #ffffff;
-      text-align: center;
-      margin-bottom: 24px;
+      margin-bottom: 60px;
+      font-weight: bold;
     }
-    p {
-      font-size: 1.2em;
-      line-height: 1.6em;
-      text-align: center;
-      margin-bottom: 40px;
-      color: #d3d6db;
+    .contact-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+      max-width: 900px;
+      margin: 0 auto;
     }
     .contact-links a {
-      display: inline-table;
-      background:#faf8f9;
-      color: #384e77;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      background: #0f172a;
+      color: #fff !important;
       font-weight: bold;
-      border-radius: 8px;
-      padding: 14px 24px;
-      margin: 8px 1px;
+      padding: 18px 40px;
+      border-radius: 18px;
       text-decoration: none;
-      font-size: 1.1em;
-      box-shadow: 0 3px 15px #22325520;
-      transition: background 0.3s ease;
+      font-size: 1.15em;
+      box-shadow: 0 0 25px #000e10, 0 0 50px #00aaff60;
+      transition: all 0.4s;
+      border: 1px solid #00d4ff40;
     }
     .contact-links a:hover {
-      background: #8f8a8a;
-      color: #384e77;
+      background: #1e293b;
+      box-shadow: 0 0 40px #000000, 0 0 80px #000000;
+      transform: translateY(-5px);
     }
+      
     .contact-links i {
-      margin-right: 10px;
-      vertical-align: middle;
+      font-size: 1.4em;
     }
   </style>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
-  
-  <h1>Let's Connect</h1>
-  
-  
-  <div class="contact-links">
-    <a href="mailto:karimzainab47@gmail.com"><i class="fas fa-envelope"></i>Email</a>
-    <a href="tel:+923135361215"><i class="fas fa-phone"></i>+92 313 5361215</a>
-    <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i>GitHub</a>
-    <a href="https://www.linkedin.com/in/zainabkarim6" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a>
+
+  <header>
+    <span>ZK</span>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+     
+    </nav>
+  </header>
+
+  <div class="connect-content">
+    <h1>Let's Connect</h1>
+
+    <div class="contact-links">
+      <a href="mailto:karimzainab47@gmail.com">
+        Email
+      </a>
+      <a href="tel:+923135361215">
+        +92 313 5361215
+      </a>
+      <a href="https://github.com/yourusername" target="_blank">
+        GitHub
+      </a>
+      <a href="https://www.linkedin.com/in/zainabkarim6" target="_blank">
+        LinkedIn
+      </a>
+    </div>
   </div>
+
 </body>
 </html>
