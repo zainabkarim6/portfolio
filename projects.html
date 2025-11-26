@@ -5,109 +5,72 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projects - Zainab Karim</title>
   <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', Arial, sans-serif;
-      background: #000000;
-      color: #000000;
+    body { margin:0; padding:0; font-family:'Segoe UI',Arial,sans-serif; background:#000; color:#fff; }
+    header { display:flex; justify-content:space-between; align-items:center; padding:32px 48px 16px 48px; }
+    .nav-links a { color:#fff; text-decoration:none; font-weight:600; margin-left:32px; font-size:1.1em; }
+    .nav-links a:hover { border-bottom:2px solid #fcfcfc; }
+    .main-container { max-width:800px; margin:48px auto 0 auto; background:#000; border-radius:32px; padding:44px; box-shadow:0 3px 24px #22325540; }
+    h2 { text-align:center; font-size:2.4em; margin-bottom:40px; letter-spacing:1px; }
+    .project-card { background:#121d32; color:#d3d6db; border-radius:18px; padding:32px 28px; margin-bottom:32px; box-shadow:0 2px 14px #22325520; transition:all .3s; }
+    .project-card:hover { box-shadow:0 8px 32px #22325545; transform:translateY(-4px); }
+    .project-card h3 { margin:0 0 16px 0; font-size:1.45em; color:#00d4ff; }
+    .project-card p { margin:0 0 20px 0; font-size:1.1em; line-height:1.7em; }
+    .btn {
+      display:inline-flex; align-items:center; gap:10px; padding:12px 24px;
+      background:#1e40af; color:#fff; border-radius:12px; text-decoration:none;
+      font-weight:600; font-size:1em; transition:all .2s;
     }
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 32px 48px 16px 48px;
-    }
-    .nav-links a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: 600;
-      margin-left: 32px;
-      font-size: 1.1em;
-      position: relative;
-    }
-    .nav-links a:hover {
-      border-bottom: 2px solid #fcfcfc;
-    }
-    .main-container {
-      max-width: 750px;
-      margin: 48px auto 0 auto;
-      background: #000000;
-      border-radius: 32px;
-      padding: 44px 44px 56px 44px;
-      box-shadow: 0 3px 24px #22325540;
-    }
-    h2 {
-      color: #ffffff;
-      margin-bottom: 32px;
-      font-size: 2.2em;
-      font-weight: bold;
-      letter-spacing: 1px;
-      text-align: left;
-    }
-    .project-card {
-      background:#121d32;
-      color: #d3d6db;
-      border-radius: 18px;
-      padding: 28px 24px;
-      margin-bottom: 28px;
-      box-shadow: 0 2px 14px #22325520;
-      transition: box-shadow .2s;
-    }
-    .project-card:hover {
-      box-shadow: 0 4px 24px #22325535;
-    }
-    .project-card h3 {
-      margin-top: 0;
-      margin-bottom: 10px;
-      font-size: 1.32em;
-    }
-    .project-card p {
-      margin: 0;
-      font-size: 1.08em;
-      line-height: 1.7em;
-    }
-   
+    .btn:hover { background:#2563eb; transform:translateY(-2px); }
+    .btn i { font-size:1.3em; }
   </style>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
   <header>
-    <span style="font-size: 1.6em; font-weight:700;letter-spacing:.5px;color: #fff;">ZK</span>
+    <span style="font-size:1.6em; font-weight:700; color:#fff;">ZK</span>
     <nav class="nav-links">
       <a href="index.html">Home</a>
       <a href="about me.html">About</a>
       <a href="connect.html">Let's Connect</a>
-      
     </nav>
   </header>
-  <div class="main-container">
-    <h2>Projects</h2>
 
+  <div class="main-container">
+    <h2>My Projects</h2>
+
+    <!-- Scratch Game (only 1 button) -->
     <div class="project-card">
-      <h3>Scratch Game</h3>
+      <h3>Scratch Game - Tree Planter Hero</h3>
       <p>
-        Created an interactive game using Scratch, implementing basic logic, animations, and user interaction.<br>
-        Learned how to plan game mechanics and program step-by-step logic.
+        An eco-friendly planting game where you grow trees to save the planet! 
+        Features levels, scoring, animations, and sound effects.
       </p>
+
+      <div style="text-align:center;">
+        <a href="https://scratch.mit.edu/projects/1248115509/" target="_blank" class="btn">
+          Play Tree Planter Hero on Scratch
+        </a>
+      </div>
     </div>
+
+    <!-- ATM Machine (C++) -->
     <div class="project-card">
       <h3>ATM Machine (C++)</h3>
-      <p>
-        Built a simple ATM machine program in C++ that handles user authentication, balance checks, and transactions.<br>
-        Learned how to work with variables, conditions, and loops.
-      </p>
-    </div>
-    <div class="project-card">
-      <h3>Creative Designs (Canva, PowerPoint, Word)</h3>
-      <p>
-        Designed posters, presentations, and documents using Canva, PowerPoint, and Word to practice layout, design, and visual communication.<br>
-        Learned how to present information clearly and creatively.
-      </p>
+      <p>Simple ATM simulation with login, balance check, withdraw & deposit.</p>
+      <div class="project-actions">
+        <a href="ATM code.txt" download class="btn" target="_blank">See code</a>
+      </div>
     </div>
 
-    
+    <!-- Creative Designs -->
+    <div class="project-card">
+      <h3>Creative Designs</h3>
+      <p>Posters, presentations & graphics made with Canva, PowerPoint, and Word.</p>
+      <div class="project-actions">
+        <a href="designs/" target="_blank" class="btn">Open Designs Folder</a>
+      </div>
+    </div>
+
   </div>
 </body>
 </html>
-
