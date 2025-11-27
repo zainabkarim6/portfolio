@@ -10,7 +10,7 @@
       margin: 0;
       font-family: 'Segoe UI', Arial, sans-serif;
       background: #000;
-      color: #d3c4b5;
+      color: #d3d6db;
     }
     header {
       display: flex;
@@ -34,7 +34,7 @@
       position: relative;
     }
     .nav-links a:hover {
-      border-bottom: 2px solid #1c3060;
+      border-bottom: 2px solid #00d4ff;
     }
 
     .main-container {
@@ -49,7 +49,6 @@
       text-align: center;
       font-size: 3.2em;
       color: #ffffff;
-      
       margin-bottom: 60px;
       font-weight: bold;
       letter-spacing: 1px;
@@ -63,28 +62,31 @@
       box-shadow: 0 10px 35px rgba(0,0,0,0.3);
       transition: all 0.4s;
       border: 1px solid rgba(0, 212, 255, 0.15);
+      display: flex;
+      gap: 40px;
+      align-items: center;
     }
     .project-card:hover {
       transform: translateY(-12px);
       box-shadow: 0 20px 50px rgba(0, 212, 255, 0.2);
     }
+    .project-info {
+      flex: 1;
+    }
     .project-card h3 {
       font-size: 2.3em;
       color: #ffffff;
-      text-shadow: 0 0 15px #000000;
       margin-bottom: 20px;
-      text-align: center;
+      text-align: left;
       font-weight: bold;
     }
     .project-card p {
       color: #d3d6db;
       font-size: 1.25em;
       line-height: 1.8;
-      text-align: center;
+      text-align: left;
       margin-bottom: 35px;
     }
-
-    /* Glowing dark blue buttons */
     .btn {
       display: inline-flex;
       align-items: center;
@@ -97,32 +99,43 @@
       border-radius: 18px;
       text-decoration: none;
       font-size: 1.15em;
-      box-shadow: 0 0 25px #000e10, 0 0 50px #00aaff60;
+      box-shadow: 0 0 25px #00d4ff, 0 0 50px #00aaff60;
       transition: all 0.4s;
       border: 1px solid #00d4ff40;
     }
     .btn:hover {
       background: #1e293b;
-      box-shadow: 0 0 40px #000000, 0 0 80px #000000;
+      box-shadow: 0 0 40px #00eeff, 0 0 80px #00aaff;
       transform: translateY(-5px);
     }
 
-   
+    .preview-img {
+      width: 100%;
+      max-width: 420px;
+      border-radius: 20px;
+      box-shadow: 0 12px 35px rgba(0,0,0,0.5);
+      border: 2px solid rgba(0, 212, 255, 0.2);
+      transition: transform 0.4s;
+    }
+    .preview-img:hover {
+      transform: scale(1.04);
+    }
 
     .doc-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 40px;
-      margin-top: 40px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        margin-top: 40px;
     }
   </style>
 </head>
 <body>
   <header>
-    <span>ZK </span>
+    <span>Zainab Karim's Portfolio</span>
     <nav class="nav-links">
       <a href="index.html">Home</a>
       <a href="about me.html">About Me</a>
+      <a href="projects.html">Projects</a>
       <a href="connect.html">Let's Connect</a>
     </nav>
   </header>
@@ -130,58 +143,82 @@
   <div class="main-container">
     <h2>My Projects</h2>
 
+    <!-- RESUME SECTION -->
+    <div class="project-card">
+      <div class="project-info">
+        <h3>My Resume</h3>
+        <p>A detailed overview of my education, skills, projects, and experience as a computer science student passionate about software development and design.</p>
+        <div style="text-align:left;">
+          <a href="Resume.pdf" target="_blank" class="btn">
+            Download Resume (PDF)
+          </a>
+        </div>
+      </div>
+      <div>
+        <img src="images\Screenshot 2025-11-27 133347.png" alt="Zainab Karim Resume Preview" class="preview-img">
+      </div>
+    </div>
+
     <!-- Scratch Game -->
     <div class="project-card">
-      <h3>Scratch Game - Tree Planter Hero</h3>
-      <p>An eco-friendly planting game where you grow trees to save the planet! Multiple levels, scoring, animations & sound effects.</p>
-      <div style="text-align:center;">
-        <a href="https://scratch.mit.edu/projects/1248106959/" target="_blank" class="btn">
-          Play Tree Planter Hero
-        </a>
+      <div class="project-info">
+        <h3>Scratch Game - Tree Planter Hero</h3>
+        <p>An eco-friendly planting game where you grow trees to save the planet! Multiple levels, scoring, animations & sound effects.</p>
+        <div style="text-align:left;">
+          <a href="https://scratch.mit.edu/projects/1248106959/" target="_blank" class="btn">
+            Play Tree Planter Hero
+          </a>
+        </div>
       </div>
     </div>
 
     <!-- Canva - Meow & More Cat Cafe -->
     <div class="project-card">
-      <h3>Canva – Meow & More Cat Cafe (Full Branding)</h3>
-      <p>Complete 10-page business portfolio designed from scratch: Logo, Business Card, Invitation Card, Flyer, Annual & Monthly Calendars, Brochure.</p>
-
-      
-
-      <div style="text-align:center;">
-        <a href="Business portfolio(2).pdf" target="_blank" class="btn">
-          View Full 10-Page Portfolio (PDF)
-        </a>
+      <div class="project-info">
+        <h3>Canva – Meow & More Cat Cafe (Full Branding)</h3>
+        <p>Complete 10-page business portfolio designed from scratch: Logo, Business Card, Invitation Card, Flyer, Annual & Monthly Calendars, Brochure.</p>
+        <div style="text-align:left;">
+          <a href="Business portfolio(2).pdf" target="_blank" class="btn">
+            View Full 10-Page Portfolio (PDF)
+          </a>
+        </div>
+      </div>
+      <div>
+        <img src="images/business.png" alt="Meow & More Preview" class="preview-img">
       </div>
     </div>
 
     <!-- Microsoft Word Projects -->
     <div class="project-card">
-      <h3>Microsoft Word – Professional Documents</h3>
-      <div class="doc-grid">
-        <div style="text-align:center;">
-          <strong>Summer Camp Feedback Form</strong><br><br>
-          <a href="PR A- Chapter 1 summer day camp feedback form.docx" target="_blank" class="btn">
-            Open Document
-          </a>
-        </div>
-        <div style="text-align:center;">
-          <strong>Eco-Reserve Conference Proposal</strong><br><br>
-          <a href="PR B-Eco Reserve Conference Proposal.docx" target="_blank" class="btn">
-            Open Document
-          </a>
+      <div class="project-info">
+        <h3>Microsoft Word – Professional Documents</h3>
+        <div class="doc-grid">
+          <div style="text-align:center;">
+            <strong>Summer Camp Feedback Form</strong><br><br>
+            <a href="PR A- Chapter 1 summer day camp feedback form.docx" target="_blank" class="btn">
+              Open Document
+            </a>
+          </div>
+          <div style="text-align:center;">
+            <strong>Eco-Reserve Conference Proposal</strong><br><br>
+            <a href="PR B-Eco Reserve Conference Proposal.docx" target="_blank" class="btn">
+              Open Document
+            </a>
+          </div>
         </div>
       </div>
     </div>
 
     <!-- C++ Project -->
     <div class="project-card">
-      <h3>ATM Machine (C++)</h3>
-      <p>Simple ATM simulation with login, balance check, withdraw & deposit functionality.</p>
-      <div style="text-align:center;">
-        <a href="ATM code.txt" download class="btn">
-          See Code
-        </a>
+      <div class="project-info">
+        <h3>ATM Machine (C++)</h3>
+        <p>Simple ATM simulation with login, balance check, withdraw & deposit functionality.</p>
+        <div style="text-align:left;">
+          <a href="ATM code.txt" download class="btn">
+            Download Source Code
+          </a>
+        </div>
       </div>
     </div>
   </div>
